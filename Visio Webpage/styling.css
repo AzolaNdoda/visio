@@ -1,0 +1,142 @@
+/* Reset & Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 2rem;
+  }
+  
+  /* Header / Logo */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #001233; /* deep navy */
+  }
+  
+  /* Hamburger menu */
+  .menu-toggle {
+    display: none; /* this would be enabled via media queries */
+    font-size: 2rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: #0033cc;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Slider Controls */
+  .slider-controls {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+  }
+  
+  /* About / Intro */
+  .intro-text {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* CTA Boxes */
+  .cta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  .cta-box {
+    flex: 1;
+    min-width: 250px;
+    background-color: #001233;
+    color: white;
+    padding: 2rem 1.5rem;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .cta-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .cta-box .cta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .cta-tags span {
+    background-color: #0033cc;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 2px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .cta-container {
+      flex-direction: column;
+    }
+  
+    .hero-text {
+      font-size: 0.8rem;
+      padding: 0.5rem 1.2rem;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  

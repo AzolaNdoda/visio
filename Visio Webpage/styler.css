@@ -1,0 +1,182 @@
+/* Reset & Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 2rem;
+  }
+  
+  /* Header / Logo */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Hamburger menu */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #001233;
+    display: block;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #001233;
+    font-weight: 500;
+  }
+  
+  /* Carousel */
+  .carousel-container {
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .carousel ul {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel li {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .carousel h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: #0033cc;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .paging {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .paging span {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .paging .active {
+    background: #0033cc;
+  }
+  
+  /* Intro Text */
+  .home-content .inner-page {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* CTA Section */
+  .ctas .inner-page {
+    margin-top: 2rem;
+  }
+  
+  .cta-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .cta-blocks li {
+    flex: 1;
+    min-width: 250px;
+    background-color: #001233;
+    color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 4px;
+    list-style: none;
+  }
+  
+  .cta-blocks li span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  
+  .links li a {
+    background-color: #0033cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .cta-blocks {
+      flex-direction: column;
+    }
+  
+    .carousel h3 {
+      font-size: 0.8rem;
+      padding: 0.5rem 1.2rem;
+    }
+  }
+  

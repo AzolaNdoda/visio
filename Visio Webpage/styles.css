@@ -1,0 +1,179 @@
+/* Reset & Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #001233;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel ul {
+    list-style: none;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel li {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #000;
+  }
+  
+  .carousel li h3 {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background-color: #0033cc;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .carousel li img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .paging {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem 0;
+  }
+  
+  .paging span {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .paging .active {
+    background-color: #0033cc;
+  }
+  
+  .home-content {
+    padding: 2rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  .ctas {
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .cta-blocks {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .cta-blocks li {
+    background-color: #001233;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 4px;
+  }
+  
+  .cta-blocks li span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .links li a {
+    color: #0033cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .cta-blocks {
+      flex-direction: column;
+    }
+  }
+  
